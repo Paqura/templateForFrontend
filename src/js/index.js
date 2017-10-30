@@ -1,5 +1,6 @@
 /* точка входа */
 
-import { x } from './constans/_const';
-
-document.write(x);
+import { TimelineMax } from "gsap";
+import Const from './const/_const';
+import Functions from './functions/_functions';
+import Components from './components/_components';

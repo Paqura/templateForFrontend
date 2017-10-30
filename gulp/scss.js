@@ -14,8 +14,8 @@ var gulp = require('gulp'),
 gulp.task('scss', function() {
     return gulp
         .src([paths.scss.src(), paths.ui.src(), paths.scss.csssrc()])
-        .pipe(plumber())
         .pipe(fileinclude())
+        .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(scss())
         .pipe(postcss([

@@ -1,1 +1,19 @@
 /*header*/
+
+.navbar {
+    &__list {
+        display: flex;
+    }
+    &__link {
+        padding: $spacer;
+        display: inline-block;
+        border: 1px solid $colorLink;
+        border-radius: $spacer/4;
+        margin: $spacer;
+    }
+}
+
+header {
+    width: 300px;
+    margin: 0 auto;
+}
