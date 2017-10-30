@@ -1,0 +1,15 @@
+@mixin toLight($color) {
+  background-color: lighten($color, 5%);
+}
+
+@mixin toDark($color) {
+  background-color: darken($color, 5%);
+}
+
+@mixin centering {
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
+

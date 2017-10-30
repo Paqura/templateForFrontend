@@ -1,0 +1,27 @@
+.switcher {
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-down(xs) {
+    justify-content: center;
+
+  }
+  &-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid $colorLink;
+    &:hover {
+      background-color: lighten($colorLink, 42%);
+    }
+    &.is-active {
+      background-color: $colorLink;
+      color: $colorPrimaryFirst;
+      border-color: $colorLink;
+    }
+  }
+}

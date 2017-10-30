@@ -1,0 +1,60 @@
+$sizeBase: 1rem;
+$padding: $sizeBase;
+$spacer: $sizeBase;
+$margin: $sizeBase;
+$fontSize: $sizeBase;
+$opacity: 0.8;
+$fontRegular: 300;
+$fontBold: 600;
+$colorPrimaryFirst: #fff;
+$colorBackground: #f3f3f3;
+$colorBackgroundHover: #daebf1;
+$colorHeader: #fff;
+$colorText: #444444;
+$colorTextLight: #667788;
+$colorTextDark: #222222;
+$colorLink: #00ade9;
+$colorLinkHover: #336699;
+$colorNote: #fff;
+$colorBorderGray: #d9dddf;
+$colorWhite: #fff;
+$colorRed: #ff0000;
+$colorGreen: #00ff00;
+$colorYellow: #ffbb33;
+$yellowHover: #ffa21f;
+$tableTdColor: #dbf1fa;
+$zMenu: 100;
+$zSelect: 200;
+$zTooltip: 300;
+$font-family-sans-serif : Tahoma,
+-apple-system,
+system-ui,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif;
+$body-color: $colorText;
+$link-color: $colorLink;
+$link-decoration: none;
+$link-hover-color: $colorLinkHover;
+$link-hover-decoration: none;
+$grid-gutter-width-base: $spacer*2;
+$grid-breakpoints: ( xs: 0,
+/* телефон 320-375 */
+
+sm: 768px,
+/* 768-1024 - планшет */
+
+md: 1025px,
+/* ноутбук 1280-1366 */
+
+lg: 1367px,
+/* большой ноутбук 1440-1680 */
+
+xl: 1681px
+/* 1920 */
+
+);
+$container-max-widths: ( sm: 768px, md: 1092px, lg: 1280px, xl: 1536px);

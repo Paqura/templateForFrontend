@@ -1,0 +1,39 @@
+.form-run {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.registration-link {
+  & i {
+    font-size: 2rem;
+    @include media-breakpoint-down(xs) {
+      font-size: 1.375rem;
+    }
+  }
+  & span {
+    font-size: 1.375rem;
+    @include media-breakpoint-down(xs) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.button-submit  {
+  font-size: 1.375rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @include media-breakpoint-down(xs) {
+    font-size: 1.125rem;
+  }
+  @include transition();
+  & i {
+    font-size: 2rem;
+    @include media-breakpoint-down(xs) {
+      font-size: 1.375rem;
+    }
+  }
+  &:hover {
+    color: $colorLink;
+  }
+}

@@ -1,0 +1,36 @@
+.tabs {
+  &__list-m {
+    display: none;
+    @include media-breakpoint-down(xs) {
+      display: block;
+      margin-bottom: $spacer;
+    }
+  }
+  &__list {
+    display: flex;
+    padding: 0;
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875 * $font-size-base;
+    color: $colorText;
+    width: 220px;
+    height: 3 * $spacer;
+    border: 1px solid $colorLink;
+    &:hover {
+      background-color: lighten($colorLink, 48%);
+    }
+    &.is-active {
+      background-color: $colorLink;
+      color: $colorPrimaryFirst;
+    }
+  }
+  &__item:not(:last-child) {
+    border-right: 0;
+  }
+}

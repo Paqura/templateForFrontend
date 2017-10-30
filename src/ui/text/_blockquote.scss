@@ -1,0 +1,13 @@
+.ui-blockquote {
+  display: block;
+  border-left: 4px solid $colorLink;
+  padding: $spacer;
+  & p {
+    font-size: $fontSize * 1.175;
+    color: $colorLinkHover;
+  }
+  & cite {
+    font-size: $fontSize * 0.875;
+    font-style: normal;
+  }
+}

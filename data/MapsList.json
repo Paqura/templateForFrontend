@@ -1,0 +1,67 @@
+[
+  {
+    "name": "office",
+    "descr": "Описание",
+    "lon": "46.351189",
+    "lat": "48.030364",
+    "type": "office",
+    "region": "30"
+  },
+  {
+    "name": "office",
+    "descr": "Описание",
+    "lon": "55.803901",
+    "lat": "37.522399",
+    "type": "office",
+    "region": "30"
+  },
+  {
+    "name": "office",
+    "descr": "Описание",
+    "lon": "55.746150",
+    "lat": "37.546228",
+    "type": "office",
+    "region": "77"
+  },
+  {
+    "name": "bankomat",
+    "descr": "Описание",
+    "lon": "55.732454",
+    "lat": "37.545036",
+    "type": "bankomat",
+    "features": "fullday",
+    "region": "77"
+  },
+  {
+    "name": "bankomat",
+    "lon": "55.730946",
+    "lat": "37.547700",
+    "type": "bankomat",
+    "features": ["everyday", "beznal"],
+    "region": "77"
+  },
+  {
+    "name": "bankomat",
+    "lon": "55.677912",
+    "lat": "37.466672",
+    "type": "bankomat",
+    "features": "nal",
+    "region": "77"
+  },
+  {
+    "name": "bankomat",
+    "lon": "55.677912",
+    "lat": "23.466672",
+    "type": "bankomat",
+    "features": "nal",
+    "region": "77"
+  },
+  {
+    "name": "office",
+    "lon": "55.677912",
+    "lat": "42.466672",
+    "type": "office",
+    "features": "nal",
+    "region": "30"
+  }
+]

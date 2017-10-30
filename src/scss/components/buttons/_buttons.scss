@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 100%;
+  outline: 0;
+  &:hover {}
+  &_style {
+    &_1 {}
+  }
+}
