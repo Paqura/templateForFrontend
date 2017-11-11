@@ -9,15 +9,22 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     paths = require('./paths'),
+    notify = require( 'gulp-notify' ),
     cleanCSS = require('gulp-clean-css');
 
 gulp.task('scss', function() {
     return gulp
         .src([paths.scss.src(), paths.ui.src(), paths.scss.csssrc()])
-        .pipe(fileinclude())
         .pipe(plumber())
+        .pipe(fileinclude())
+
         .pipe(sourcemaps.init())
-        .pipe(scss())
+        .pipe(scss().on( 'error', notify.onError(
+            {
+              message: "<%= error.message %>",
+              title  : "Sass Error!"
+            } ) )
+        )
         .pipe(postcss([
             require("postcss-focus"),
             require("cssnano")({
@@ -28,6 +35,7 @@ gulp.task('scss', function() {
         .pipe(cleanCSS({ compatibility: "ie11" }))
         .pipe(concat("styles.css"))
         .pipe(sourcemaps.write("."))
+        .pipe(plumber.stop())
         .pipe(gulp.dest(paths.scss.dist()))
         .pipe(reload({ stream: true }));
 });

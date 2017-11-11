@@ -1,6 +1,2 @@
-/* Компоненты (зависисые блоки) */
+import Toggler from './ButtonToggle/_buttonToggle';
 
-$(document).ready(function() {
-    moveFromLeft('.navbar a');
-    moveFromLeft('canvas');
-});
