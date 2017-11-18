@@ -1,1 +1,1 @@
-export const tl = new TimelineMax();
+/* Константы */

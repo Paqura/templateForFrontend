@@ -1,1 +1,6 @@
 @import 'init/init';
+div {
+    animation-name: bounceIn;
+    animation-duration: 1200ms;
+    animation-timing-function: linear;
+}

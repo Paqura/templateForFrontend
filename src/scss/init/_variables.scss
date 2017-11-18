@@ -1,33 +1,21 @@
 $sizeBase: 1rem;
-$padding: $sizeBase;
 $spacer: $sizeBase;
-$margin: $sizeBase;
 $fontSize: $sizeBase;
 $opacity: 0.8;
 $fontRegular: 300;
 $fontBold: 600;
-$fontFamily: 'PT Sans', sans-serif;
+$fontSuperBold: 900;
+$fontFamily: 'PT Sans',
+sans-serif;
 $colorPrimaryFirst: #fff;
-$colorBackground: #f3f3f3;
-$colorBackgroundHover: #daebf1;
-$colorHeader: #fff;
-$colorText: #444444;
-$colorTextLight: #667788;
-$colorTextDark: #222222;
+$colorPrimarySecond: #000;
 $colorLink: #00ade9;
 $colorLinkHover: #336699;
-$colorNote: #fff;
-$colorBorderGray: #d9dddf;
-$colorWhite: #fff;
-$colorRed: #ff0000;
-$colorGreen: #00ff00;
-$colorYellow: #ffbb33;
-$yellowHover: #ffa21f;
-$tableTdColor: #dbf1fa;
+$colorDanger: red;
 $zMenu: 100;
 $zSelect: 200;
 $zTooltip: 300;
-$font-family-sans-serif : Tahoma,
+$font-family-sans-serif: Tahoma,
 -apple-system,
 system-ui,
 BlinkMacSystemFont,
@@ -36,19 +24,17 @@ Roboto,
 "Helvetica Neue",
 Arial,
 sans-serif;
-$body-color: $colorText;
-$link-color: $colorLink;
-$link-decoration: none;
-$link-hover-color: $colorLinkHover;
-$link-hover-decoration: none;
 $grid-gutter-width-base: $spacer*2;
 $grid-breakpoints: ( xs: 0,
 /* телефон 320-375 */
 
-sm: 768px,
+xm: 380px, sm: 768px,
 /* 768-1024 - планшет */
 
-md: 1025px,
+
+/* bmd - междупланшетная версия */
+
+bmd: 920px, md: 1025px,
 /* ноутбук 1280-1366 */
 
 lg: 1367px,
@@ -58,4 +44,4 @@ xl: 1681px
 /* 1920 */
 
 );
-$container-max-widths: ( sm: 768px, md: 1092px, lg: 1280px, xl: 1536px);
+$container-max-widths: (xm: 420px, sm: 768px, bmd: 920px, md: 1092px, lg: 1280px, xl: 1536px);

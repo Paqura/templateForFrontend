@@ -8,7 +8,12 @@ document.addEventListener('DOMContentLoaded',() => {
   button.addEventListener('click', event => {
     event.preventDefault();
 
+    let target = event.target;
+    let dataText = JSON.parse(target.dataset.obj);
+
+    target.innerText = dataText.name;
     text.classList.toggle('v-hidden');
+
     changeName();
   });
 
