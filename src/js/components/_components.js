@@ -1,2 +1,1 @@
-import Toggler from './ButtonToggle/_buttonToggle';
-
+import Modal from './Modal/modal';
