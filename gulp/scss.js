@@ -19,7 +19,7 @@ gulp.task('scss', function() {
         .pipe(fileinclude())
 
         .pipe(sourcemaps.init())
-        .pipe(scss().on( 'error', notify.onError(
+        .pipe(scss({includePaths: ['./node_modules/']}).on( 'error', notify.onError(
             {
               message: "<%= error.message %>",
               title  : "Sass Error!"
