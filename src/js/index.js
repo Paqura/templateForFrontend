@@ -1,5 +1,6 @@
 /* точка входа */
 
-// import { TimelineMax } from "gsap";
+import $ from 'jquery';
 
 import Components from './components/_components';
+
