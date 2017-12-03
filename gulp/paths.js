@@ -51,7 +51,7 @@ var paths = {
     },
     vendors: {
         src: function() {
-            return paths.base.src + 'vendors/**/*.*'
+            return paths.base.src + 'vendors/vendors.js'
         },
         dist: function() {
             return paths.base.dist + 'vendors/'
@@ -78,8 +78,8 @@ var paths = {
             return paths.base.src + "ui/**/*.scss"
         },
     },
-    maps: function() {
-        return paths.base.dist + "maps/"
+    modules: function() {
+        return 'node_modules'
     }
 };
 

@@ -10,6 +10,9 @@ gulp.task('html', function () {
       .pipe(nunjucks({
         path: [paths.html.srcDir()]
       }))
+      .on('error', function(err) {
+         console.log(err);
+      })
       .pipe(gulp.dest(paths.html.dist()))
       .pipe(reload({stream: true}));
 });

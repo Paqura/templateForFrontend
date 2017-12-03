@@ -1,22 +1,16 @@
-var gulp = require('gulp'),
-    browserSync = require('browser-sync'),
-    concat = require('gulp-concat'),
-    sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify'),
+var gulp = require("gulp"),
     paths = require('./paths'),
-    pump = require('pump');
+    concat = require('gulp-concat'),
+    rename = require('gulp-rename');
 
-gulp.task("vendors", function(cb) {
-    return gulp.src([
-        'src/vendors/**/jquery.min.js',
-
-        'src/vendors/**/mask.js',
-        'src/vendors/**/slick.min.js',
-        'src/vendors/**/sweetalert.min.js'
-    ])
-
-    .pipe(uglify())
-        .pipe(concat('vendors.min.js'))
-        .pipe(gulp.dest("dist/vendors"));
-
+gulp.task('vendors', () => {
+      gulp.src([
+          'node_modules/jquery/dist/jquery.min.js',
+          'node_modules/slick-carousel/slick/slick.min.js',
+          'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+          'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
+          'node_modules/intl-tel-input/build/js/intlTelInput.min.js',
+      ])
+      .pipe(concat('vendors.min.js'))
+      .pipe(gulp.dest(paths.vendors.dist()));
 });

@@ -1,11 +1,15 @@
 var webpack = require('webpack'),
+    path = require('path'),
     paths = require('./gulp/paths'),
     UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
-
 module.exports = {
+  entry: {
+    index: './src/js/index.js'
+  },
   output: {
-    filename: 'scripts.js'
+    path: path.resolve(__dirname, 'dist/js'),
+    filename: `[name].min.js`
   },
   module: {
     rules: [
@@ -15,15 +19,16 @@ module.exports = {
         loader: 'babel-loader',
         query: {
           presets: [
-            ['latest', { modules: false }]
+            ['latest', {modules: false}]
           ]
         }
-      }
+      },
     ]
   },
   plugins: [
     new UglifyJSPlugin({
       sourceMap: true
     })
+
   ]
 };
