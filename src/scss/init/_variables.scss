@@ -5,23 +5,28 @@ $opacity: 0.8;
 $fontRegular: 300;
 $fontBold: 600;
 $fontSuperBold: 900;
-$fontFamily: 'PT Sans',
+$fontFamily: 'PT Sans', sans-serif,
 sans-serif;
 $colorPrimaryFirst: #fff;
-$colorPrimarySecond: #000;
-$colorLink: #00ade9;
+$colorPrimarySecond: #18191c;
+$colorLink: #68a8de;
+$colorBorder: #d8dbdf;
+$colorGhost: #686e7d;
+$colorTimer: #f2c537;
+$colorPrimaryButton: #fbcc3f;
+$colorGradientButton: #eab722;
+$colorText: #18191c;
+
 $colorLinkHover: #336699;
 $colorDanger: red;
 $zMenu: 100;
 $zSelect: 200;
 $zTooltip: 300;
-$font-family-sans-serif: Tahoma,
+$font-family-sans-serif: 'PT Sans',
 -apple-system,
 system-ui,
 BlinkMacSystemFont,
-"Segoe UI",
 Roboto,
-"Helvetica Neue",
 Arial,
 sans-serif;
 $grid-gutter-width-base: $spacer*2;

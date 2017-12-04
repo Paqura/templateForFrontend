@@ -1,0 +1,24 @@
+.icon-png {
+  display: inline-block;
+}
+
+.counter-icon {
+  height: $spacer * 1.175;
+  width: $spacer * 1.175;
+}
+
+.icon {
+  &_plus {
+    width: 12px;
+    height: 10px;
+    fill: $colorGhost;
+    margin-right: 2px;
+  }
+  &_basket {
+    width: 20px;
+    height: 16px;
+    fill: $colorPrimarySecond;
+    margin-right: 4px;
+  }
+}
+

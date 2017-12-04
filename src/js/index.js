@@ -2,17 +2,6 @@
 
 $(document).ready(function(){
 
-  $('.your-class').slick();
-
-  $('.test-popup-link').magnificPopup({
-    type: 'image'
-  });
-
-  $('.open-popup-link').magnificPopup({
-    type:'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });
-
   jsPhone();
   function jsPhone() {
     $('.js-phone').intlTelInput({
@@ -23,8 +12,6 @@ $(document).ready(function(){
       separateDialCode: false,
       utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/12.1.4/js/utils.js'
     });
-
-
 
     $(document).on('focus onFlagSet', '.js-phone', function () {
       var place = $(this).attr('placeholder');

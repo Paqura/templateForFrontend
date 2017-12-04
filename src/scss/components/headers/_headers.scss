@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $colorText;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h1 {
+
+}
+
+h2 {
+  position: relative;
+  font-size: $fontSize * 2;
+  padding-bottom: 26px;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 45px);
+    width: 90px;
+    height:  2px;
+    background-color: $colorPrimaryButton;
+  }
+}
+
+h3 {
+  font-size: $fontSize * 1.625;
+}
+
+
+.header-with-icon {
+  & h4 {
+    font-size: $fontSize * 1.375;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & i {
+      display: inline-block;
+      margin-right: $spacer;
+    }
+  }
+}
+

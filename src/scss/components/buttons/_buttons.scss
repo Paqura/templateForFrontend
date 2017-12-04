@@ -1,0 +1,45 @@
+.button {
+  width: 100%;
+  background-color: $colorPrimaryFirst;
+  border-radius: 5px;
+  border: 0;
+  &_outline {
+    height: 44px;
+    border: 2px solid $colorPrimaryButton;
+    font-weight: $fontBold;
+    font-size: $fontSize * 1.25;
+  }
+  &_primary {
+    height: 50px;
+    font-size: $fontSize * 1.25;
+    font-weight: $fontBold;
+    background-color: $colorPrimaryButton;
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+  &_gradient {
+    height: 55px;
+    font-size: $fontSize * 1.25;
+    font-weight: $fontBold;
+    background-color: $colorGradientButton;
+    border-bottom: 3px solid darken($colorGradientButton, 20%);
+    background-image: linear-gradient(to top, #ffc826 0%, #ffe539 100%);
+  }
+  &_light {
+    height: 50px;
+    font-weight: $fontBold;
+    font-size: $fontSize * 1.25;
+    background-color: $colorPrimaryFirst;
+    border: 1px solid $colorBorder;
+  }
+  &_show-more {
+    color: $colorGhost;
+    height: 48px;
+    border: 1px solid #e8f0f7;
+    background-color: #f7f9fe;
+  }
+}

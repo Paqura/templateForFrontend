@@ -26,7 +26,7 @@ gulp.task('scss', function() {
             } ) )
         )
         .pipe(postcss([
-            require("postcss-focus"),
+            // require("postcss-focus"),
             require("cssnano")({
                 preset: "default"
             })

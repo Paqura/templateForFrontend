@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     paths = require('./paths');
 
-
 gulp.task('html', function () {
   return gulp.src(paths.html.src())
       .pipe(nunjucks({

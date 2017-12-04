@@ -2,24 +2,19 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src:
-  url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/pt-sans-v9-latin_cyrillic-regular.woff') format('woff'); /* Modern Browsers */
+  src: url('../fonts/PT-Sans-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
-  font-weight: 400;
-  src:
-  url('../fonts/pt-sans-v9-latin_cyrillic-italic.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/pt-sans-v9-latin_cyrillic-italic.woff') format('woff'); /* Modern Browsers */
+  font-weight: 700;
+  src: url('../fonts/PT-Sans-BI.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/pt-sans-v9-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/pt-sans-v9-latin_cyrillic-700.woff') format('woff'); /* Modern Browsers */
+  src: url('../fonts/PT-Sans-Bold.woff') format('woff');
 }

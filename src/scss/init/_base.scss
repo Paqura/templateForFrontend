@@ -20,6 +20,10 @@ textarea {
     font-family: $font-family-base;
 }
 
+:focus {
+    outline: none !important;
+}
+
 
 
 
