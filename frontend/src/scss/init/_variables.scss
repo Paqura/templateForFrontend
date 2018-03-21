@@ -1,0 +1,365 @@
+// Global
+// Options
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Grid breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        xs360: 360px,
+        xs375: 375px,
+        sm: 768px,
+        sm1024: 1024px,
+        sm1280: 1280px,
+        md: 1281px,
+        lg: 1367px,
+        xl: 1441px,
+        fh: 1601px
+);
+
+$container-max-widths: (
+        xs360: 360px,
+        xs375: 375px,
+        sm: 768px,
+        sm1024: 1024px,
+        sm1280: 1025px, // 1280
+        md: 1096px, // 1366
+        lg: 1156px, // 1440
+        xl: 1288px, // 1600
+        fh: 1540px
+);
+
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 2),
+        6: ($spacer * 3),
+        7: ($spacer * 4),
+        8: ($spacer * 5)
+);
+
+$grid-gutter-width: 2 * $spacer;
+
+// Colors
+$white: #fff;
+$gray-e: #eee;
+$gray-d: #ddd;
+$gray-c: #ccc;
+$gray-b: #bbb;
+$gray-a: #aaa;
+$gray-9: #999;
+$gray-8: #888;
+$gray-7: #777;
+$gray-6: #666;
+$gray-5: #555;
+$gray-4: #444;
+$gray-3: #333;
+$gray-2: #222;
+$gray-1: #111;
+$black: #000;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$theme-colors: (
+        primary: $blue,
+        secondary: $gray-6,
+        success: $green,
+        info: $cyan,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-d,
+        dark: $gray-3
+);
+
+$component-active-color: $white !default;
+//noinspection SassScssResolvedByNameOnly
+$component-active-bg: theme-color('primary') !default;
+
+// Body
+$body-bg: $white !default;
+$body-color: $gray-9;
+
+// Border
+$border-width: 1px !default;
+$border-color: $gray-2 !default;
+$border-radius: .25rem !default;
+$border-radius-lg: .3rem !default;
+$border-radius-sm: .2rem !default;
+
+// Transitions
+$transition-base: all .2s ease-in-out !default;
+$transition-fade: opacity .15s linear !default;
+$transition-collapse: height .35s ease !default;
+
+// Content
+// Typography
+$small-font-size: 80% !default;
+$text-muted: $gray-6 !default;
+
+// Fonts
+$font-family-sans-serif: Roboto, 'Helvetica Neue', Arial, sans-serif;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-base: 1rem;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .875rem !default;
+
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+$line-height-base: 1.5 !default;
+
+// Links
+//noinspection SassScssResolvedByNameOnly
+$link-color: theme-color('primary') !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Header
+$h1-font-size: 2.5 * $font-size-base;
+$h2-font-size: 2 * $font-size-base;
+$h3-font-size: 1.75 * $font-size-base;
+$h4-font-size: 1.5 * $font-size-base;
+$h5-font-size: 1.25 * $font-size-base;
+$h6-font-size: 1 * $font-size-base;
+
+$headings-margin-bottom: ($spacer / 2);
+$headings-font-family: inherit;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: inherit;
+$headings-color: inherit;
+
+// Display Header
+$display1-size: 6 * $font-size-base;
+$display2-size: 5 * $font-size-base;
+$display3-size: 4 * $font-size-base;
+$display4-size: 3 * $font-size-base;
+
+$display1-weight: 300 !default;
+$display2-weight: 300 !default;
+$display3-weight: 300 !default;
+$display4-weight: 300 !default;
+$display-line-height: $headings-line-height !default;
+
+// Paragraph
+$paragraph-margin-bottom: 1rem;
+
+$lead-font-size: 1.25rem !default;
+$lead-font-weight: 300 !default;
+
+// Blockquotes
+$blockquote-font-size: ($font-size-base * 1.25) !default;
+$blockquote-small-color: $gray-6 !default;
+
+// Code
+$code-font-size: 90% !default;
+$code-padding-y: .2rem !default;
+$code-padding-x: .4rem !default;
+$code-color: #bd4147 !default;
+$code-bg: $gray-1 !default;
+
+// Keyboard
+$kbd-color: $white !default;
+$kbd-bg: $gray-9 !default;
+
+// Pre
+$pre-color: $gray-9 !default;
+$pre-scrollable-max-height: 340px !default;
+
+// Tables
+$table-cell-padding: .75rem !default;
+$table-cell-padding-sm: .3rem !default;
+
+$table-bg: transparent !default;
+$table-accent-bg: rgba($black, .05) !default;
+$table-hover-bg: rgba($black, .075) !default;
+$table-active-bg: $table-hover-bg !default;
+
+$table-border-width: $border-width !default;
+$table-border-color: $gray-2 !default;
+
+$table-head-bg: $gray-2 !default;
+$table-head-color: $gray-7 !default;
+
+// List group
+
+$list-group-bg: $white !default;
+$list-group-border-color: rgba($black, .125) !default;
+$list-group-border-width: $border-width !default;
+$list-group-border-radius: $border-radius !default;
+
+$list-group-item-padding-y: .75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
+
+$list-group-hover-bg: $gray-1 !default;
+$list-group-active-color: $component-active-color !default;
+$list-group-active-bg: $component-active-bg !default;
+$list-group-active-border-color: $list-group-active-bg !default;
+
+$list-group-disabled-color: $gray-6 !default;
+$list-group-disabled-bg: $list-group-bg !default;
+
+$list-group-action-color: $gray-7 !default;
+$list-group-action-hover-color: $list-group-action-color !default;
+
+$list-group-action-active-color: $body-color !default;
+$list-group-action-active-bg: $gray-2 !default;
+
+// Media
+// HR
+$hr-border-color: rgba($black, .1) !default;
+$hr-border-width: $border-width !default;
+
+// Image Thumbnail
+$thumbnail-padding: .25rem !default;
+$thumbnail-bg: $body-bg !default;
+$thumbnail-border-width: $border-width !default;
+$thumbnail-border-color: #ddd !default;
+$thumbnail-border-radius: $border-radius !default;
+$thumbnail-box-shadow: 0 1px 2px rgba($black, .075) !default;
+$thumbnail-transition: all .2s ease-in-out !default;
+
+// Figures
+$figure-caption-font-size: 90% !default;
+$figure-caption-color: $gray-6 !default;
+
+// Components
+//Alert
+$alert-padding-y: .75rem !default;
+$alert-padding-x: 1.25rem !default;
+$alert-margin-bottom: 1rem !default;
+$alert-border-radius: $border-radius !default;
+$alert-link-font-weight: $font-weight-bold !default;
+$alert-border-width: $border-width !default;
+
+// Badges
+$badge-color: $white !default;
+$badge-font-size: 75% !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-padding-y: .25em !default;
+$badge-padding-x: .4em !default;
+
+$badge-pill-padding-x: .6em !default;
+$badge-pill-border-radius: 10rem !default;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y: .75rem !default;
+$breadcrumb-padding-x: 1rem !default;
+$breadcrumb-item-padding: .5rem !default;
+
+$breadcrumb-margin-bottom: 1rem !default;
+
+$breadcrumb-bg: $gray-2 !default;
+$breadcrumb-divider-color: $gray-6 !default;
+$breadcrumb-active-color: $gray-6 !default;
+$breadcrumb-divider: '/' !default;
+
+// Forms
+// Buttons
+$input-btn-padding-y: .5rem !default;
+$input-btn-padding-x: .75rem !default;
+$input-btn-line-height: 1.25 !default;
+
+$input-btn-padding-y-sm: .25rem !default;
+$input-btn-padding-x-sm: .5rem !default;
+$input-btn-line-height-sm: 1.5 !default;
+
+$input-btn-padding-y-lg: .5rem !default;
+$input-btn-padding-x-lg: 1rem !default;
+$input-btn-line-height-lg: 1.5 !default;
+
+$btn-font-weight: $font-weight-normal !default;
+$btn-box-shadow: inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
+//noinspection SassScssResolvedByNameOnly
+$btn-focus-box-shadow: 0 0 0 3px rgba(theme-color('primary'), .25) !default;
+$btn-active-box-shadow: inset 0 3px 5px rgba($black, .125) !default;
+
+$btn-link-disabled-color: $gray-6 !default;
+
+$btn-block-spacing-y: .5rem !default;
+
+$btn-border-radius: $border-radius !default;
+$btn-border-radius-lg: $border-radius-lg !default;
+$btn-border-radius-sm: $border-radius-sm !default;
+
+$btn-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// Inputs
+$input-bg: $white !default;
+$input-disabled-bg: $gray-2 !default;
+
+$input-color: $gray-7 !default;
+$input-border-color: rgba($black, .15) !default;
+$input-btn-border-width: $border-width !default; // For form controls and buttons
+$input-box-shadow: inset 0 1px 1px rgba($black, .075) !default;
+
+$input-border-radius: $border-radius !default;
+$input-border-radius-lg: $border-radius-lg !default;
+$input-border-radius-sm: $border-radius-sm !default;
+
+$input-focus-bg: $input-bg !default;
+//noinspection SassScssResolvedByNameOnly
+$input-focus-border-color: lighten(theme-color('primary'), 25%) !default;
+$input-focus-box-shadow: $input-box-shadow, $btn-focus-box-shadow !default;
+$input-focus-color: $input-color !default;
+
+$input-placeholder-color: $gray-6 !default;
+
+$input-height-border: $input-btn-border-width * 2 !default;
+
+$input-height-inner: ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
+$input-height: calc(#{$input-height-inner} + #{$input-height-border}) !default;
+
+$input-height-inner-sm: ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
+$input-height-sm: calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
+
+$input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
+$input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
+
+$input-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s !default;
+
+$form-text-margin-top: .25rem !default;
+
+$form-check-margin-bottom: .5rem !default;
+$form-check-input-gutter: 1.25rem !default;
+$form-check-input-margin-y: .25rem !default;
+$form-check-input-margin-x: .25rem !default;
+
+$form-check-inline-margin-x: .75rem !default;
+
+$form-group-margin-bottom: 1rem !default;
+
+$input-group-addon-color: $input-color !default;
+$input-group-addon-bg: $gray-2 !default;
+$input-group-addon-border-color: $input-border-color !default;
+$input-group-btn-border-color: $input-border-color !default;
+
+
+$choices-font-size-lg: $font-size-base;
+$choices-font-size-md: $font-size-base;
+$choices-font-size-sm: $font-size-base;
+$choices-border-radius: $border-radius;
+$choices-bg-color: $white;
+$choices-text-color: $gray-7;
+$choices-keyline-color: $input-border-color;

@@ -1,0 +1,37 @@
+@import '../variables';
+@import 'choices\.js/assets/styles/scss/choices';
+
+.#{$choices-selector} {
+  color: $input-color;
+
+  &[data-type*='select-one'] {
+    .#{$choices-selector}__inner {
+      padding-bottom: .5 * $spacer;
+    }
+  }
+}
+
+.#{$choices-selector}__inner {
+  min-height: 2 * $spacer;
+  padding: .5 * $spacer .75 * $spacer;
+}
+
+.#{$choices-selector}__list--dropdown {
+  .#{$choices-selector}__item {
+    padding: .5 * $spacer .75 * $spacer;
+  }
+
+  .#{$choices-selector}__item--selectable {
+    padding-right: 0;
+
+    &.is-highlighted {
+      background-color: $input-border-color;
+    }
+  }
+}
+
+.#{$choices-selector}__list--single {
+  display: flex;
+  line-height: 1.25;
+  padding: 0 1.125 * $spacer 0 0;
+}

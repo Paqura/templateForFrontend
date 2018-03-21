@@ -1,0 +1,16 @@
+@import 'variables';
+
+body {
+  color: $black;
+}
+
+.small-gutters {
+  margin-left: - $spacer / 4;
+  margin-right: - $spacer / 4;
+
+  > .col,
+  > [class*='col-'] {
+    padding-left: $spacer / 4;
+    padding-right: $spacer / 4;
+  }
+}

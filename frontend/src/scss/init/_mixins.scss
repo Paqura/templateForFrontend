@@ -1,0 +1,5 @@
+@import 'bootstrap/scss/functions';
+
+@mixin opacity($opacity: .8) {
+  opacity: $opacity;
+}
