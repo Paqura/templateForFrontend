@@ -1,0 +1,17 @@
+import svg4everybody from 'svg4everybody';
+
+svg4everybody();
+
+import 'es6-promise/auto';
+
+(function (ELEMENT) {
+  ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+  ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+    if (!this) return null;
+    if (this.matches(selector)) return this;
+    if (!this.parentElement) {
+      return null;
+    }
+    else return this.parentElement.closest(selector);
+  };
+}(Element.prototype));
