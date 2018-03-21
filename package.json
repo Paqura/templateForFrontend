@@ -12,11 +12,13 @@
   },
   "scripts": {
     "prod": "gulp --prod",
-    "dev": "gulp --dev"
+    "dev": "gulp --dev",
+    "test": "jest"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "babel-core": "^6.26.0",
+    "babel-jest": "^23.0.0-alpha.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
@@ -44,9 +46,11 @@
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "imagemin-mozjpeg": "^6.0.0",
+    "jest": "^22.4.2",
     "minimist": "^1.2.0",
     "node-sass": "^4.7.2",
     "pump": "^1.0.3",
+    "regenerator-runtime": "^0.11.1",
     "sass-lint": "^1.12.1",
     "style-loader": "^0.19.1",
     "svg4everybody": "^2.1.9",
@@ -56,5 +60,8 @@
     "vue-template-compiler": "^2.5.13",
     "webpack": "^3.10.0",
     "webpack-stream": "^4.0.0"
+  },
+  "jest": {
+    "transform": {}
   }
 }
