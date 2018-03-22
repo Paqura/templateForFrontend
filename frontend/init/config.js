@@ -17,53 +17,55 @@ export const DIST_DIR = 'dist';
 export const DEST_DIR = join(ROOT_DIR, DIST_DIR, env);
 
 export const css = {
-    src: 'scss',
-    dest: 'css',
-    glob: '**/*.scss',
-    bundleName: 'styles.css',
+  src: 'scss',
+  dest: 'css',
+  glob: '**/*.scss',
+  bundleName: 'styles.css',
 };
 
 export const js = {
-    src: 'js',
-    dest: 'js',
-    fileName: 'index.js',
-    bundleName: 'scripts.js',
-    glob: '**/*.js',
-    vue: '**/*.vue'
+  src: 'js',
+  dest: 'js',
+  fileName: 'index.js',
+  bundleName: 'scripts.js',
+  glob: '**/*.js',
+  vue: '**/*.vue'
 };
 
 export const fonts = {
-    src: 'fonts',
-    dest: 'fonts',
-    glob: '**/*.*'
+  src: 'fonts',
+  dest: 'fonts',
+  glob: '**/*.*'
 };
 
 export const html = {
-    src: 'njk',
-    pages: 'pages',
-    popup: 'popup',
-    data: 'data',
-    destPages: '.',
-    destPopup: './popup',
-    destData: './data',
-    glob: '*.njk',
-    watchsrc: '**/*.njk',
+  src: 'njk',
+  pages: 'pages',
+  popup: 'popup',
+  data: 'data',
+  destPages: '.',
+  destPopup: './popup',
+  destData: './data',
+  glob: '*.njk',
+  watchsrc: '**/*.njk',
 };
 
 export const images = {
-    src: 'images',
-    dest: 'images',
-    glob: '**/*.*'
+  src: 'images',
+  dest: 'images',
+  glob: '**/*.*'
 };
 
 export const icons = {
-    src: 'icons',
-    dest: 'images',
-    glob: '**/*.*'
+  src: 'icons',
+  fill: 'icons/fill',
+  nofill: 'icons/nofill',
+  dest: 'images',
+  glob: '**/*.*'
 };
 
 export const favicon = {
-    src: 'favicon',
-    dest: '.',
-    glob: '**/*.*'
+  src: 'favicon',
+  dest: '.',
+  glob: '**/*.*'
 };

@@ -8,13 +8,14 @@ import svgstore from 'gulp-svgstore';
 import cheerio from 'gulp-cheerio';
 
 const paths = {
-  src: join(config.SRC_DIR, config.icons.src, config.icons.glob),
+  srcFill: join(config.SRC_DIR, config.icons.fill, config.icons.glob),
+  srcNoFill: join(config.SRC_DIR, config.icons.nofill, config.icons.glob),
   dest: join(config.DEST_DIR, config.icons.dest)
 };
 
-export default function icons(cb) {
+export const iconsNofill = (cb) => {
   pump([
-    gulp.src(paths.src),
+    gulp.src(paths.srcNoFill),
     imagemin(),
     cheerio({
       run: function ($) {
@@ -27,4 +28,18 @@ export default function icons(cb) {
     svgstore(),
     gulp.dest(paths.dest)
   ], cb);
-}
+};
+
+export const iconsFill = (cb) => {
+  pump([
+    gulp.src(paths.srcFill),
+    imagemin(),
+    cheerio({
+      parserOptions: {
+        xmlMode: true
+      }
+    }),
+    svgstore(),
+    gulp.dest(paths.dest)
+  ], cb);
+};
