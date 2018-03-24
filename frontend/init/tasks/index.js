@@ -10,6 +10,7 @@ import js from './js';
 import {iconsFill, iconsNofill} from './icons';
 import fonts from './fonts';
 import favicon from './favicon';
+import assets from './assets';
 
 import watch from './watch';
 import server from './server';
@@ -24,6 +25,7 @@ const prodTasks = gulp.series(clean, gulp.parallel(
   iconsFill,
   iconsNofill,
   fonts,
+  assets,
   favicon
 ));
 
@@ -39,6 +41,7 @@ const devTasks =
     images,
     js,
     fonts,
+    assets,
     favicon,
     gulp.parallel(
       server,
