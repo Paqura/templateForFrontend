@@ -16,6 +16,12 @@ export const SRC_DIR = join(ROOT_DIR, 'src');
 export const DIST_DIR = 'dist';
 export const DEST_DIR = join(ROOT_DIR, DIST_DIR, env);
 
+export const assets = {
+  src: 'assets',
+  dest: 'assets',
+  glob: '**/*.*'
+};
+
 export const css = {
   src: 'scss',
   dest: 'css',
