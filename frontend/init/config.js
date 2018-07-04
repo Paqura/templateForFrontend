@@ -57,15 +57,15 @@ export const html = {
 };
 
 export const images = {
-  src: 'images',
+  src: 'images/raster',
   dest: 'images',
   glob: '**/*.*'
 };
 
 export const icons = {
-  src: 'icons',
-  fill: 'icons/fill',
-  nofill: 'icons/nofill',
+  src: 'images/vector',
+  fill: 'images/vector/fill',
+  nofill: 'images/vector/nofill',
   dest: 'images',
   glob: '**/*.*'
 };

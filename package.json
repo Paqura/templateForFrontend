@@ -11,7 +11,7 @@
     "vue": "^2.5.13"
   },
   "scripts": {
-    "prod": "gulp --prod",
+    "build": "gulp --prod",
     "dev": "gulp --dev",
     "test": "jest"
   },
