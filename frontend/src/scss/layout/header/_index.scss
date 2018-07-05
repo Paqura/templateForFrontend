@@ -1,0 +1,25 @@
+.header {
+  background-color: $primary-white;
+  border-bottom: 1px solid $border-color;
+  &__nav {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 89px;
+  }
+  &__nav-list {    
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+  }
+}
+
+@import './separator';
+@import './catalog';
+@import './on-order';
+@import './logo';
+@import './search';
+@import './basket';

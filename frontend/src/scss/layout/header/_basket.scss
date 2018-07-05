@@ -1,0 +1,23 @@
+.basket {
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: $font-size;
+    color: $primary-black;
+    transition: opacity 200ms ease;
+    &:hover {
+      text-decoration: none;
+      color: $primary-black;
+      opacity: $opacity;
+    }
+  }
+  &__icon {
+    display: flex;
+    margin-right: $spacer * 1.75;
+  }
+  &__text {
+    display: inline-block;
+    margin-right: $spacer/4;
+  }
+}

@@ -9,8 +9,6 @@ const paths = {
   dest: join(config.DEST_DIR, config.assets.dest)
 };
 
-console.log(paths);
-
 export default function assets(cb) {
   pump([
     gulp.src(paths.src),

@@ -1,0 +1,13 @@
+.on-order {
+  margin-left: $spacer*2;
+  &__link {
+    font-weight: bold;
+    font-size: $font-size;
+    color: $primary-black;
+    &:hover {
+      color: $primary-black;
+      opacity: $opacity;
+      text-decoration: none;
+    }
+  }
+}
