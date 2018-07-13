@@ -1,31 +1,31 @@
 // sass-lint:disable no-duplicate-properties
 
-@import 'variables';
+@import "variables";
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
-  src: local('OpenSans'), local('OpenSans-Regular'), url('../assets/fonts/OpenSans-Regular.woff') format('woff');
+  src: local("OpenSans"), local("OpenSans-Regular"), url("../assets/fonts/OpenSans-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-style: bold;
   font-weight: 700;
-  src: local('OpenSans-Bold'), local('OpenSans-Bold'), url('../assets/fonts/OpenSans-Bold.woff') format('woff');
+  src: local("OpenSans-Bold"), local("OpenSans-Bold"), url("../assets/fonts/OpenSans-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
-  src: local('OpenSans'), local('OpenSans-Regular'), url('../assets/fonts/OpenSans-Regular.woff2') format('woff2');
+  src: local("OpenSans"), local("OpenSans-Regular"), url("../assets/fonts/OpenSans-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'OpenSans';
+  font-family: "OpenSans";
   font-style: bold;
   font-weight: 700;
-  src: local('OpenSans-Bold'), local('OpenSans-Bold'), url('../assets/fonts/OpenSans-Bold.woff2') format('woff2');
+  src: local("OpenSans-Bold"), local("OpenSans-Bold"), url("../assets/fonts/OpenSans-Bold.woff2") format("woff2");
 }

@@ -20,7 +20,11 @@ const taskArray = (src, dest) => {
   return [
     gulp.src(src),
     nunjucks({
-      path: join(config.SRC_DIR, config.html.src)
+      path: join(config.SRC_DIR, config.html.src),
+      data: {
+        css_name: './css/styles',
+        js_name: './js/scripts'
+      }
     }),
     htmlmin({minifyJS: true, removeComments: true, removeScriptTypeAttributes: true, removeStyleLinkTypeAttributes: true}),
     gulp.dest(dest),

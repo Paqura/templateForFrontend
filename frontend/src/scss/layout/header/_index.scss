@@ -1,25 +1,7 @@
 .header {
-  background-color: $primary-white;
-  border-bottom: 1px solid $border-color;
-  &__nav {
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
-    
-    height: 89px;
-  }
-  &__nav-list {    
-    display: flex;    
-    justify-content: space-between;
-    align-items: center;
+  background-color: #cccccc;
 
-    height: 100%;
+  @include media-breakpoint-down(md) {
+    background-color: #ff9990;
   }
 }
-
-@import './separator';
-@import './catalog';
-@import './on-order';
-@import './logo';
-@import './search';
-@import './basket';

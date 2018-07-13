@@ -11,7 +11,7 @@ import {iconsFill, iconsNofill} from './icons';
 import fonts from './fonts';
 import favicon from './favicon';
 import assets from './assets';
-
+import manifest from './manifest';
 import watch from './watch';
 import server from './server';
 
@@ -21,12 +21,12 @@ const prodTasks = gulp.series(clean, gulp.parallel(
   html.data,
   css,
   images,
-  js,
   iconsFill,
   iconsNofill,
   fonts,
   assets,
-  favicon
+  favicon,
+  js
 ));
 
 const devTasks =

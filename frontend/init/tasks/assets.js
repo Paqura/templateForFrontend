@@ -1,8 +1,8 @@
-import {join} from 'path';
-import * as config from '../config';
-
 import gulp from 'gulp';
 import pump from 'pump';
+
+import { join } from 'path';
+import * as config from '../config';
 
 const paths = {
   src: join(config.SRC_DIR, config.assets.src, config.assets.glob),

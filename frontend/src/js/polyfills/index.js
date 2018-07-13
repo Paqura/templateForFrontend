@@ -1,8 +1,7 @@
 import svg4everybody from 'svg4everybody';
+import 'es6-promise/auto';
 
 svg4everybody();
-
-import 'es6-promise/auto';
 
 (function (ELEMENT) {
   ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;

@@ -1,8 +1,19 @@
-$font-family: 'OpenSans', sans-serif;
+$font-family:
+  "OpenSans",
+  "Tahoma",
+  -apple-system,
+  system-ui,
+  "BlinkMacSystemFont",
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue",
+  "Arial",
+  sans-serif;
+
 $font-size: 16px;
 $spacer: 16px;
 
-$backdrop: rgba(214, 214, 214, 0.4);;
+$backdrop: rgba(214, 214, 214, 0.4);
 $opacity: 0.7;
 
 $grid-breakpoints: (

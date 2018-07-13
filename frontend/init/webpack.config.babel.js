@@ -1,8 +1,11 @@
 import * as config from './config';
 
-import UglifyJS from 'uglifyjs-webpack-plugin';
 import webpack from 'webpack';
+import UglifyJS from 'uglifyjs-webpack-plugin';
+import path from 'path';
 
+
+console.log(path.resolve(__dirname))
 const DevPlugins = [
   new webpack.ProvidePlugin({}),
   new webpack.DefinePlugin({
@@ -37,7 +40,8 @@ export default {
     ],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
-    }
+    },
+    modules: [path.resolve(__dirname, 'src'), 'node_modules']
   },
   plugins : WebpackPlugins,
   module : {
@@ -47,7 +51,7 @@ export default {
         exclude: /(node_modules|bower_components)/,
         use: [
           {
-            loader: 'babel-loader'            
+            loader: 'babel-loader'
           }, {
             loader: 'eslint-loader'
           }
