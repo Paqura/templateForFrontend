@@ -46,7 +46,7 @@
     "html-webpack-plugin": "^3.2.0",
     "imagemin-mozjpeg": "^6.0.0",
     "jest": "^22.4.4",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "node-sass": "^4.9.2",
     "pump": "^1.0.3",
     "regenerator-runtime": "^0.11.1",
